@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html lang="pt">
+    <head>
+        <title>AndroidConf Brasil 2011</title>
+        <meta charset="utf-8" />
+        <link href="{{ STATIC_URL }}img/androidconf_favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/android-conf.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <nav>
+{% include "menu.html" %}
+        </nav>
+        <header>
+{% include "header.html" %}
+        </header>
+        {% block content %}
+        <section>
+            <!-- Main content area -->
+        </section>
+        {% endblock content %}
+        {% block sidebar %}
+        <aside>
+{% include "sidebar.html" %} 
+        </aside>
+        {% endblock sidebar %}
+        <footer>
+{% include "footer.html" %} 
+        </footer>
+    </body>
+</html>
