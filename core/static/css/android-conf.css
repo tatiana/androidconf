@@ -35,17 +35,23 @@ header h1 span {color:#90C558}
 header p {color:#949494;line-height: 35px;}
 header p.upper {text-transform:uppercase}
 
-section {padding:42px 40px 0 40px;position:absolute}
-section h2{color:#90C558;font-size:24px;margin-bottom:20px;}
-section p{color:#626262;font-size:14px;margin-bottom:14px;}
-section ul{margin-bottom:14px;}
-section li{color:#626262;font-size:14px}
-section li:before {color: #90C558;content: "•  ";margin-left:10px;font-size:20px;vertical-align:middle}
+.content {display:table;margin:42px 40px 42px 40px;position:absolute;}
 
-footer {background:#535353;bottom:0;height:116px;position:absolute;width:100%;
+article {display:table-cell;padding-right:22px} 
+article h2{color:#90C558;font-size:24px;margin-bottom:20px;}
+article p{color:#626262;font-size:14px;margin-bottom:14px;}
+article ul{margin-bottom:14px;}
+article li{color:#626262;font-size:14px}
+article li:before {color: #90C558;content: "•  ";margin-left:10px;font-size:20px;vertical-align:middle}
+article strong span {color:#90C558;}
+
+aside{display:table-cell;width:240px}
+
+footer {background:#535353;bottom:0;display:block;height:80px;position:absolute;width:100%;
     -moz-box-shadow: 10px 10px 71px #000000;
     -webkit-box-shadow: 10px 10px 71px #000000;
     box-shadow: 1px 1px 10px #000000;}
+
 
 /*
 Great sites that I used for creating CSS3 stuff available:
