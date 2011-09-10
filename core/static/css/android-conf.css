@@ -1,3 +1,5 @@
+.content {display:table;margin:42px 40px 42px 40px;position:absolute;}
+
 nav {background:#383838;display:inline-block;height:32px;line-height:1px;vertical-align:middle;width:100%}
 nav ul {float:right;padding:4px 14px 0 0}
 nav li {display:inline; } 
@@ -28,31 +30,114 @@ header {background:#535353;height:116px;width:100%;
     -moz-box-shadow: 10px 10px 71px #000000;
     -webkit-box-shadow: 10px 10px 71px #000000;
     box-shadow: 1px 1px 10px #000000;}
-header img {float:left;left: -18px;position:relative;top:-28px}
+header img {float:left;left: -18px;position:relative;top:-28px; z-index:10000;}
 header div {float:right;margin-right:30px;text-align:right;}
 header h1 {color:#FFFFFF;font-size:36px;text-shadow:2px 2px 1px #000000;}
 header h1 span {color:#90C558}
 header p {color:#949494;line-height: 35px;}
 header p.upper {text-transform:uppercase}
 
-.content {display:table;margin:42px 40px 42px 40px;position:absolute;}
-
-article {display:table-cell;padding-right:22px} 
+article {border-right: 2px solid #E8E8E8;display: table-cell;margin-right: 12px;padding-right: 20px;min-height:700px}
 article h2{color:#90C558;font-size:24px;margin-bottom:20px;}
 article p{color:#626262;font-size:14px;margin-bottom:14px;}
+article p.right-align strong {float:right; margin-bottom:20px;margin-top:20px;}
 article ul{margin-bottom:14px;}
 article li{color:#626262;font-size:14px}
 article li:before {color: #90C558;content: "•  ";margin-left:10px;font-size:20px;vertical-align:middle}
 article strong span {color:#90C558;}
 
-aside{display:table-cell;width:240px}
+
+aside{color:#7D7D7D;display:table-cell;width:220px;padding-left:20px}
+aside p {color:#FFF}
+
+#countdown ul{margin-top:-26px; margin-left: 4px;}
+#countdown .digits {text-align:center}
+#countdown li{display:table-cell;font-size:40px; text-align:center; width:49px}
+#countdown .digits-label {font-size:12px; padding-right:2px}
+
+.button a:hover {color:#535353}
+.button a {
+
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.02, rgb(63,92,46)),
+    color-stop(0.51, rgb(124,168,78))
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(63,92,46) 2%,
+    rgb(124,168,78) 51%
+);
+background-image: -o-linear-gradient(rgb(124,168,78),rgb(63,92,46));
+
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0 1px 0 #000000;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+    font-size: 24px;
+    margin: 20px 4px 10px 6px;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 190px;
+    float:left
+}
+/* FIXME: twitter */
+#twitter{height:220px;width:212px;
+    border-radius: 1px 1px 1px 1px;
+    -webkit-box-shadow: 1px 1px 2px #8E8E8E;
+    -moz-box-shadow: 1px 1px 2px #8E8E8E;
+    box-shadow: 1px 1px 2px #8E8E8E; 
+    float:left;
+    margin-top:10px;
+    margin-left:10px;
+    z-index:-10px
+    }
+
+.androidbird {
+position:absolute;
+    display: block;
+    margin-bottom: -34px;
+    margin-left: -26px;
+    margin-top: -7px;
+z-index: 10000;
+}
+
+.twtr-widget-profile img.twtr-profile-img {
+    display: none !important;}
+.twtr-ft span {display: none !important}
+.twtr-ft a img {display: none}
+#twtr-widget-1 h3 {display: none}
+.twtr-hd h4 a {color:#90C558 !important}
+
+.twtr-ft div {display:none}
+
 
 footer {background:#535353;bottom:0;display:block;height:80px;position:absolute;width:100%;
     -moz-box-shadow: 10px 10px 71px #000000;
     -webkit-box-shadow: 10px 10px 71px #000000;
-    box-shadow: 1px 1px 10px #000000;}
+    box-shadow: 1px 1px 10px #000000;
+}
+/*footer {background:#383838;display:inline-block;height:32px;line-height:1px;vertical-align:middle;width:100%}*/
+footer ul {float:left;padding:4px 14px 0 0; width:100%}
+footer ul li {display:inline; float:left; width:200px; margin-left:30px } 
+footer ul li .person {display:inline; float:left; width:200px;margin-left:0} 
+/*footer ul li .person {display:inline; float:left; width:200px;} */
 
-
+footer ul li p {
+    color: #90C558;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px
+}
+footer ul li ul li img {}
+footer ul li.category ul li.person div {float:left; width:100px}
+footer ul li.category ul li.person div a {color:#FFF; font-size:12px;}
+footer ul li.category ul li.last div {float:left; width:100px}
 /*
 Great sites that I used for creating CSS3 stuff available:
 

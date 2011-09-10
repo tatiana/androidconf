@@ -1,53 +1,101 @@
-<div>
-    <p><span id="countdown-days">00</span>:<span id="countdown-hours">00</span>:<span id="countdown-minutes">00</span>:<span id="countdown-seconds">00</span></p>
-    <p><span class="label">dias</span> <span class="label">horas</span> <span class="label">mins</span> <span class="label">segs</span></p>
-</div>
+        <p>.</p>
+        <div id="countdown">
+            <ul>
+                <li>
+                    <div class="digits" id="countdown-days">00:</div>
+                    <div class="digits-label">dias </div>
+                </li>
+                <li>
+                    <div class="digits" id="countdown-hours">00:</div>
+                    <div class="digits-label">horas </div>
+                </li>
+                <li>
+                    <div class="digits" id="countdown-minutes">00:</div>
+                    <div class="digits-label">mins </div>
+                </li>
+                <li>
+                    <div class="digits" id="countdown-seconds">00</div>
+                    <div class="digits-label">segs</div>
+                </li>
+            </ul>
+        </div>
 
+        <div class="button">
+            <a href="# id="subscribe"">inscreva-se</a>
+        </div>
 
+        <div id="twitter">
+            <img class="androidbird" src="/static/img/twitter-android.png" alt="Tweeter Android" />
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+        new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 2,
+            interval: 30000,
+            width: 'auto',
+            height: 180,
+            theme: {
+            shell: {
+                background: '#ffffff',
+                color: '#90c558'
+            },
+            tweets: {
+                background: '#ffffff',
+                color: '#535353',
+                links: '#90c558'
+            }
+            },
+            features: {
+            scrollbar: false,
+            loop: false,
+            live: true,
+            hashtags: true,
+            timestamp: true,
+            avatars: false,
+            behavior: 'all'
+            }
+        }).render().setUser('androidconf').start();
+        </script>
+    </div>
 
-<script type="text/javascript">
+    <div class="social">
+        <a href="# id="twitter""></a>
+    </div>
 
-    function Countdown(then) {
-     
-	    this.then = then;
-	    
-	    function setElement(id, value) {
-		    value = (value < 10) ? "0" + value: + value;
-		    window.document.getElementById(id).innerHTML = value;
-	    }
-	    
-	    function countdown() {
-		    now  		  = new Date();
-		    diff		  = new Date(this.then - now);
-		    
-		    seconds_left  = Math.floor(diff.valueOf() / 1000);
-	    
-		    seconds  = Math.floor(seconds_left / 1) % 60;
-		    minutes  = Math.floor(seconds_left / 60) % 60;
-		    hours    = Math.floor(seconds_left / 3600) % 24;
-		    days     = Math.floor(seconds_left / 86400) % 86400;
-		    
-		    setElement('countdown-days', days);
-		    setElement('countdown-hours', hours);
-		    setElement('countdown-minutes', minutes);
-		    setElement('countdown-seconds', seconds);
-		    
-		    countdown.timer = setTimeout(countdown, 1000);
-	    }
-	    
-		    
-	    function start() {
-		    this.timer = setTimeout(countdown, 1000);
-	    }
-	    
-	    start(then);	
-     }
-     
-     Countdown(new Date("Nov 26 2011 08:00:00"));
-
-
-</script>
-
-
+    <script type="text/javascript">
+        function Countdown(then, elementId) {
+        this.then = then;
+        this.elementId = elementId;
+        function setElement(id, value) {
+            value = (value < 10) ? "0" + value: + value;
+            value =(id != "countdown-seconds") ? value+":" : value;
+            console.debug(document.getElementById(this.elementId));
+            document.getElementById(id).innerHTML = value;
+        }
+        function countdown() {
+            now = new Date();
+            diff = new Date(this.then - now);
+            seconds_left  = Math.floor(diff.valueOf() / 1000);
+            seconds  = Math.floor(seconds_left / 1) % 60;
+            minutes  = Math.floor(seconds_left / 60) % 60;
+            hours    = Math.floor(seconds_left / 3600) % 24;
+            days     = Math.floor(seconds_left / 86400) % 86400;
+                
+            setElement('countdown-days', days);
+            setElement('countdown-hours', hours);
+            setElement('countdown-minutes', minutes);
+            setElement('countdown-seconds', seconds);
+        
+            countdown.timer = setTimeout(countdown, 1000);
+        }
+            
+        function start() {
+            this.timer = setTimeout(countdown, 1000);
+        }
+        start(then);    
+        } 
+        Countdown(new Date("Nov 26 2011 08:00:00"), "countdown");
+    </script>
 
 
