@@ -1,16 +1,16 @@
         <nav>
              <ul>
-                <li><a href="sobre">sobre</a></li>
-                <li><a href="inscricao">inscrição</a></li>
-                <li><a href="programacao">programação</a></li>
-                <li><a href="local">local</a></li>
+                <li><a {% ifequal current_page "sobre" %}class="current" {% endifequal %}href="sobre">sobre</a></li>
+                <li><a {% ifequal current_page "inscricao" %}class="current" {% endifequal %}href="inscricao">inscrição</a></li>
+                <li><a {% ifequal current_page "programacao" %}class="current" {% endifequal %}href="programacao">programação</a></li>
+                <li><a {% ifequal current_page "local" %}class="current" {% endifequal %}href="local">local</a></li>
             </ul>
         </nav>
         <header>
-            <img src="{{ STATIC_URL }}img/androidconf.png" alt="AndroidConf Brasil 2011" />
+            <a href="/"><img src="{{ STATIC_URL }}img/androidconf.png" alt="AndroidConf Brasil 2011" /></a>
             <div>
                 <p>sábado | 26 de novembro de 2011</p>
-                <h1>AndroidConf <span>Brasil</span></h1>
+                <a href="/"><h1>AndroidConf <span>Brasil</span></h1></a>
                 <p class=upper>Rio de Janeiro</p>
             </div>
         </header>

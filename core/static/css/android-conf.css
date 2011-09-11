@@ -7,7 +7,7 @@ nav li a {float:left;margin:0 4px 10px 0;padding:10px 16px 12px 16px;}
 nav li a:link {color:#A1A1A1;font-size:16px;text-decoration:none;}
 nav li a:visited {color:#A1A1A1}
 nav li a:hover {color:#FFFFFF}
-nav li a:active {color:#FFFFFF;
+nav li a.current {color:#FFFFFF;
     border:2px 0 2px 0 solid #383838;
     background:#3F5C2E;
     background:-webkit-gradient(linear, left top, left bottom, from(#7CA84E), to(#3F5C2E));

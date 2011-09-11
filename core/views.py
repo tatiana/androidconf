@@ -1,18 +1,14 @@
 from django.conf import settings
 from django.shortcuts import render_to_response
 
-def about(request):
-    context = {'STATIC_URL': settings.STATIC_URL}
-    return render_to_response('index.html', context)
+template = {"sobre": "index.html",
+            "local": "place.html",
+            "inscricao": "under-construction.html",
+            "programacao": "under-construction.html"}
 
-def place(request):
-    context = {'STATIC_URL': settings.STATIC_URL}
-    return render_to_response('place.html', context)
-
-def subscribe(request):
-    context = {'STATIC_URL': settings.STATIC_URL}
-    return render_to_response('under-construction.html', context)
-
-def schedule(request):
-    context = {'STATIC_URL': settings.STATIC_URL}
-    return render_to_response('under-construction.html', context)
+def handle_request(request):
+    page = request.path.split('/')[-1]
+    if page not in template:
+        page = "sobre"
+    context = {'STATIC_URL': settings.STATIC_URL, 'current_page': page}
+    return render_to_response(template[page], context)
