@@ -1,44 +1,49 @@
-.content {display: table;margin: 4px auto;width: 960px;}
+.content {display:table; margin-top:-22px !important}
+.block {margin: 0 auto;width:960px}
 
-
-nav {background:#383838;display:inline-block;height:32px;line-height:1px;vertical-align:middle;width:100%}
-nav ul {float:right;padding:4px 14px 0 0}
-nav li {display:inline; } 
-nav li a {float:left;margin:0 4px 10px 0;padding:10px 16px 12px 16px;}
-nav li a:link {color:#A1A1A1;font-size:16px;text-decoration:none;}
+/* Navigation bar (on top) */
+nav {background:#383838; display:inline-block; height:32px; overflow:hidden; vertical-align:middle; width:100%}
+nav ul {float:right; padding:4px 14px 0 0}
+nav li {display:inline;}
+nav li a {float:left; line-height:1px; margin:0 4px 10px 0; padding:10px 16px 12px 16px;}
+nav li a:link {color:#A1A1A1; font-size:16px; text-decoration:none;}
 nav li a:visited {color:#A1A1A1}
 nav li a:hover {color:#FFFFFF}
 nav li a.current {color:#FFFFFF;
     border:2px 0 2px 0 solid #383838;
     background:#3F5C2E;
+    /* gradient */ 
     background:-webkit-gradient(linear, left top, left bottom, from(#7CA84E), to(#3F5C2E));
     background:-webkit-linear-gradient(top, #7CA84E, #3F5C2E);
     background:-moz-linear-gradient(top, #7CA84E, #3F5C2E);
     background:-ms-linear-gradient(top, #7CA84E, #3F5C2E);
     background:-o-linear-gradient(top, #7CA84E, #3F5C2E);
+    /* border radius */
     -webkit-border-radius:40px;
     -moz-border-radius:40px;
     border-radius:40px;
+    /* shadow */
     -webkit-box-shadow:rgba(0,0,0,1) 0 1px 0;
     -moz-box-shadow:rgba(0,0,0,1) 0 1px 0;
     box-shadow:rgba(0,0,0,1) 0 1px 0;
-    text-shadow:rgba(0, 0, 0, .4) 0 1px 0;
-    color:white;
     text-decoration:none;
+    text-shadow:rgba(0, 0, 0, .4) 0 1px 0;
     vertical-align:middle;}
 
+/* Header - includes logo and title */
 header {background:#535353;height:116px;width:100%;
     -moz-box-shadow: 10px 10px 71px #000000;
     -webkit-box-shadow: 10px 10px 71px #000000;
-    box-shadow: 1px 1px 10px #000000;}
-header img {float:left;left: -18px;position:relative;top:-28px; z-index:10000;}
+    box-shadow: 1px 1px 10px #000000;
+    margin-bottom:60px}
+header img {float:left; left:-18px; position:relative; top:-28px; z-index:10000;}
 header .block div {float:right;margin-right:30px;text-align:right;}
 header h1 {color:#FFFFFF;font-size:36px;text-shadow:2px 2px 1px #000000;}
 header h1 span {color:#90C558}
 header p {color:#949494;line-height: 35px;}
 header p.upper {text-transform:uppercase}
 
-article {display: table-cell;margin-right: 12px;padding-right: 20px;width:600px;min-height:700px;}
+article {display: table-cell;margin-right: 12px;padding-right: 20px;width:620px;}
 article h2{color:#90C558;font-size:24px;margin-bottom:14px;}
 article p{color:#626262;font-size:14px;margin-bottom:14px;}
 article p.right-align strong {float:right; margin-bottom:20px;margin-top:20px;}
@@ -57,36 +62,34 @@ aside p {color:#FFF}
 
 .button a:hover {color:#535353}
 .button a {
-
-background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.02, rgb(63,92,46)),
-    color-stop(0.51, rgb(124,168,78))
-);
-background-image: -moz-linear-gradient(
-    center bottom,
-    rgb(63,92,46) 2%,
-    rgb(124,168,78) 51%
-);
-background-image: -o-linear-gradient(rgb(124,168,78),rgb(63,92,46));
-
-    border-radius: 40px 40px 40px 40px;
-    box-shadow: 0 1px 0 #000000;
-    color: white;
-    text-decoration: none;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-    vertical-align: middle;
-    font-size: 24px;
-    margin: 20px 4px 10px 6px;
-    padding: 6px 16px;
-    text-align: center;
-    text-decoration: none;
-    width: 190px;
-    float:left
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(63,92,46)),
+        color-stop(0.51, rgb(124,168,78))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(63,92,46) 2%,
+        rgb(124,168,78) 51%
+    );
+    background-image: -o-linear-gradient(rgb(124,168,78),rgb(63,92,46));
+        border-radius: 40px 40px 40px 40px;
+        box-shadow: 0 1px 0 #000000;
+        color: white;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        vertical-align: middle;
+        font-size: 24px;
+        margin: 20px 4px 10px 6px;
+        padding: 6px 16px;
+        text-align: center;
+        text-decoration: none;
+        width: 190px;
+        float:left
 }
-/* FIXME: twitter */
+
 #twitter{height:220px;width:212px;
     border-radius: 1px 1px 1px 1px;
     -webkit-box-shadow: 1px 1px 2px #8E8E8E;
@@ -113,31 +116,27 @@ z-index: 10000;
 .twtr-ft a img {display: none}
 #twtr-widget-1 h3 {display: none}
 .twtr-hd h4 a {color:#90C558 !important}
-
 .twtr-ft div {display:none}
 
 
-footer {background:#535353;bottom:0;display:block;height:80px;width:100%;
+footer {background:#535353;bottom:0;display:block;height:100px;width:100%;
     -moz-box-shadow: 10px 10px 71px #000000;
     -webkit-box-shadow: 10px 10px 71px #000000;
     box-shadow: 1px 1px 10px #000000;
-}
-/*footer {background:#383838;display:inline-block;height:32px;line-height:1px;vertical-align:middle;width:100%}*/
-footer ul {float:left;padding:4px 14px 0 0; width:100%}
-footer ul li {display:inline; float:left; width:200px; margin-left:30px } 
-footer ul li .person {display:inline; float:left; width:200px;margin-left:0} 
-/*footer ul li .person {display:inline; float:left; width:200px;} */
+    position: absolute;
+    bottom: 0;
+    }
+footer #menu-outer {height: 84px; margin: 0 auto; width: 960px;}
+footer .table {display:table; margin: 0 auto;}
+footer ul#horizontal-list {list-style: none; padding-top: 20px;width: 960px;}
+footer ul#horizontal-list li {display:inline; width:290px}
+footer li {display:block; float:left; width:200px; margin-left:30px } 
+footer li .person {display:block; float:left; width:200px;margin-left:0} 
+footer li p {color: #90C558; font-size: 16px; font-weight: bold; margin-bottom: 6px}
+footer li.person div {float:left; width:100px}
+footer li.person div a {color:#FFF; font-size:12px;}
+footer li.last div {float:left; width:100px}
 
-footer ul li p {
-    color: #90C558;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 6px
-}
-footer ul li ul li img {}
-footer ul li.category ul li.person div {float:left; width:100px}
-footer ul li.category ul li.person div a {color:#FFF; font-size:12px;}
-footer ul li.category ul li.last div {float:left; width:100px}
 /*
 Great sites that I used for creating CSS3 stuff available:
 
@@ -149,4 +148,4 @@ Great sites that I used for creating CSS3 stuff available:
 
 */
 
-.block {margin: 0 auto;width:960px}
+
