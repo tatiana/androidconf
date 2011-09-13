@@ -1,6 +1,8 @@
 .content {display:table; margin-top:-22px !important}
 .block {margin: 0 auto;width:960px}
 
+a {color:#90C558}
+
 /* Navigation bar (on top) */
 nav {background:#383838; display:inline-block; height:32px; overflow:hidden; vertical-align:middle; width:100%}
 nav ul {float:right; padding:4px 14px 0 0}
@@ -89,6 +91,7 @@ aside p {color:#FFF}
         width: 190px;
         float:left
 }
+.sponsor .button a {font-size:18px;float:none;}
 
 #twitter{height:220px;width:212px;
     border-radius: 1px 1px 1px 1px;

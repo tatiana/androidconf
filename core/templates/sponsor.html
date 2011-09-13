@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+        {% block content %}
+        <article class="sponsor">
+           {% include "social.html" %}
+            <h2>patrocine</h2>
+            <p>Você possui uma empresa que desenvolve aplicações mobile com
+            Android? A sua empresa oferece cursos nesta área? Você está
+            buscando profissionais qualificados para contratar? </p>
+            <p>Seja um patrocinador da <strong><span>AndroidConf Brasil</span></strong>!</p>
+            <p>Baixe já a nossa proposta de captação:</p>
+
+            <div class="button">
+<a title="Sponsoring proposal" href="{{ STATIC_URL}}/docs/androidconf_captacao.pdf">Proposta de captação AndroidConf 2011</a>
+    </div>
+
+
+            <p><br>Para nos contactar, escreva para: <strong>contato</strong>
+            <i>arroba</i> <strong>androidconf.com.br</strong></p>
+
+        </article>
+
+        {% endblock content %}
+
+
+

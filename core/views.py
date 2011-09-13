@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response
 
 template = {"sobre": "index.html",
             "local": "place.html",
+            "patrocine": "sponsor.html",
             "inscricao": "under-construction.html",
             "programacao": "under-construction.html"}
 
