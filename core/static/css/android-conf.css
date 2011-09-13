@@ -1,4 +1,4 @@
-.content {display:table; margin-top:-22px !important}
+.content {display:table; margin-top:-22px !important; padding-left:10px}
 .block {margin: 0 auto;width:960px}
 
 a {color:#90C558}
@@ -38,7 +38,7 @@ header {background:#535353;height:116px;width:100%;
     -webkit-box-shadow: 10px 10px 71px #000000;
     box-shadow: 1px 1px 10px #000000;
     margin-bottom:60px}
-header img {float:left; left:-18px; position:relative; top:-28px; z-index:10000;}
+header img {float:left; position:relative; top:-28px; z-index:10000;}
 header .block div {float:right;margin-right:30px;text-align:right;}
 header h1 {color:#FFFFFF;font-size:36px;text-shadow:2px 2px 1px #000000;}
 header h1 span {color:#90C558}
