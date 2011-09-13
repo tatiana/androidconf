@@ -137,6 +137,16 @@ footer li.person div {float:left; width:100px}
 footer li.person div a {color:#FFF; font-size:12px;}
 footer li.last div {float:left; width:100px}
 
+.footernav {
+    color: #687680;
+    display: table-cell;
+    float: right;
+    margin-top:20px;
+    padding-left: 30px;
+    width: 300px;
+}
+
+
 /*
 Great sites that I used for creating CSS3 stuff available:
 
