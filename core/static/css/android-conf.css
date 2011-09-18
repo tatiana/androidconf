@@ -93,7 +93,7 @@ aside p {color:#FFF}
 }
 .sponsor .button a {font-size:18px;float:none;}
 
-#twitter{height:220px;width:212px;
+#twitter{height:140px;width:212px;
     border-radius: 1px 1px 1px 1px;
     -webkit-box-shadow: 1px 1px 2px #8E8E8E;
     -moz-box-shadow: 1px 1px 2px #8E8E8E;
@@ -129,7 +129,7 @@ footer {background:#535353;bottom:0;display:block;height:80px;width:100%;
     position: absolute;
     bottom: 0;
     }
-footer #menu-outer {height: 100px; margin: 0 auto; width: 960px;}
+footer #menu-outer {height: 80px; margin: 0 auto; width: 960px;}
 footer .table {display:table; margin: 0 auto;}
 footer ul#horizontal-list {list-style: none; padding-top: 10px;width: 960px;}
 footer ul#horizontal-list li {display:inline;} /*width:290px}*/
@@ -142,12 +142,14 @@ footer li.last div {float:left; width:110px}
 footer li.sponsor {width:100px}
 footer li.first {margin-right:60px}
 
+
 .footernav {
     color: #687680;
     display: table-cell;
     float: right;
     width: 306px;
 }
+
 
 
 /*
