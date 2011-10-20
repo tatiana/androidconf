@@ -73,7 +73,6 @@
         function setElement(id, value) {
             value = (value < 10) ? "0" + value: + value;
             value =(id != "countdown-seconds") ? value+":" : value;
-            console.debug(document.getElementById(this.elementId));
             document.getElementById(id).innerHTML = value;
         }
         function countdown() {

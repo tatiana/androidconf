@@ -23,8 +23,6 @@
 		    setElement('countdown-hours', hours);
 		    setElement('countdown-minutes', minutes);
 		    setElement('countdown-seconds', seconds);
-                    console.debug(days);
-                    console.debug(hours);
 		    
 		    countdown.timer = setTimeout(countdown, 1000);
 	    }
