@@ -4,8 +4,8 @@ from django.shortcuts import render_to_response
 template = {"sobre": "index.html",
             "local": "place.html",
             "patrocine": "sponsor.html",
-            "inscricao": "under-construction.html",
-            "programacao": "under-construction.html"}
+            "inscricao": "registration.html",
+            "programacao": "agenda.html"}
 
 def handle_request(request):
     page = request.path.split('/')[-1]
