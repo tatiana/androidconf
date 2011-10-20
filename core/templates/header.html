@@ -1,23 +1,21 @@
-
-<nav>
-<div class="block">
-             <ul>
-                <li><a {% ifequal current_page "sobre" %}class="current" {% endifequal %}href="sobre">sobre</a></li>
-                <li><a {% ifequal current_page "inscricao" %}class="current" {% endifequal %}href="inscricao">inscrição</a></li>
-                <li><a {% ifequal current_page "programacao" %}class="current" {% endifequal %}href="programacao">programação</a></li>
-                <li><a {% ifequal current_page "patrocine" %}class="current" {% endifequal %}href="patrocine">patrocine</a></li>
-                <li><a {% ifequal current_page "local" %}class="current" {% endifequal %}href="local">local</a></li>
-            </ul>
-            </div>
-            </nav>
-            <header>
+        <nav>
             <div class="block">
-            <a href="/"><img src="{{ STATIC_URL }}img/androidconf.png" alt="AndroidConf Brasil 2011" /></a>
-            <div>
-                <p>sábado | 26 de novembro de 2011</p>
-                <a href="/"><h1>AndroidConf <span>Brasil</span></h1></a>
-                <p class=upper>Rio de Janeiro</p>
+                 <ul>
+                    <li><a {% ifequal current_page "sobre" %}class="current" {% endifequal %}href="sobre">sobre</a></li>
+                    <li><a {% ifequal current_page "inscricao" %}class="current" {% endifequal %}href="inscricao">inscrição</a></li>
+                    <li><a {% ifequal current_page "programacao" %}class="current" {% endifequal %}href="programacao">programação</a></li>
+                    <li><a {% ifequal current_page "patrocine" %}class="current" {% endifequal %}href="patrocine">patrocine</a></li>
+                    <li><a {% ifequal current_page "local" %}class="current" {% endifequal %}href="local">local</a></li>
+                </ul>
             </div>
-             </div>
+        </nav>
+        <header>
+            <div class="block">
+                <a href="/"><img src="{{ STATIC_URL }}img/androidconf.png" alt="AndroidConf Brasil 2011" /></a>
+                <div>
+                    <p>sábado | 26 de novembro de 2011</p>
+                    <a href="/"><h1>AndroidConf <span>Brasil</span></h1></a>
+                    <p class=upper>Rio de Janeiro</p>
+                </div>
+            </div>
         </header>
-

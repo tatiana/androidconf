@@ -1,17 +1,14 @@
 {% extends "base.html" %}
-
         {% block content %}
-        <article class="map">
-            {% include "social.html" %}
-            <p>Hotel Windsor Flórida <br>
-            Rua Ferreira Viana, 81 - Flamengo<br>
-            Rio de Janeiro - RJ (22210-040)</p>
-            <!-- Google Maps Element Code -->
-            {# http://www.google.com/webelements/#!/maps #}
+            <article class="map">
+{% include "social.html" %}
+<p><a href="http://www.windsorhoteis.com.br/br/hoteis/windsor-florida/7/apresentacao.aspx">Hotel Windsor Flórida</a><br>
+                Rua Ferreira Viana, 81 - Flamengo<br>
+                Rio de Janeiro - RJ (22210-040)</p>
+                <!-- Google Maps Element Code -->
+                {# http://www.google.com/webelements/#!/maps #}
 <iframe frameborder=0 marginwidth=0 marginheight=0 border=0 style="border:0;margin:0;width:500px;height:220px;" src="http://www.google.com/uds/modules/elements/mapselement/iframe.html?maptype=roadmap&latlng=-22.91397010219763%2C-43.171119689941406&mlatlng=-22.926795%2C-43.176536&maddress1=Rua%20Ferreira%20Viana%2C%2081&maddress2=Rio%20de%20Janeiro%20-%20RJ%2C%2022011-010%2C%20Brazil&zoom=12&mtitle=AndroidConf%20(Windsor%20Florida)&element=true" scrolling="no" allowtransparency="true"></iframe>
-
-        </article>
-
+            </article>
         {% endblock content %}
 
 

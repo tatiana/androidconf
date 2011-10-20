@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html lang="pt">
     <head>
         <title>AndroidConf Brasil 2011</title>
@@ -7,38 +6,33 @@
         <link href="{{ STATIC_URL }}img/androidconf_favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="{{ STATIC_URL }}css/android-conf.css" type="text/css" media="screen" />
+
         <!-- Google Analytics -->
-
         <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-25654596-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-25654596-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
         </script>
-
-
     </head>
-        <body>
+    <body>
 {% include "header.html" %}
-            <div class="content block">
+        <div class="content block">
 {% block content %}
-                <article>
-                    <!-- Main content area -->
-                </article>
+            <article>
+                <!-- Main content area -->
+            </article>
 {% endblock content %}
-                <aside>
-{% include "sidebar.html" %} 
-                </aside>
-            </div>
-            <footer>
-{% include "footer.html" %} 
-            </footer>
-        </body>
+            <aside>
+{% include "sidebar.html" %}
+            </aside>
+        </div>
+        <footer>
+{% include "footer.html" %}
+        </footer>
+    </body>
 </html>
