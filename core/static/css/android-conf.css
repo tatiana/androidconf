@@ -152,9 +152,107 @@ footer li.first {margin-right:60px}
     width: 306px;
 }
 
+/*
+article table
+{
+    border-collapse: collapse;
+    color: #626262;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
 
+article table  td {
+    height: 15px;
+    padding: 2px;
+    position: relative;
+    vertical-align: top;
+    width: 300px;
+}
+
+article table td.time{
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+}*/
+
+#background-image tbody tr:hover td {
+    background: none repeat scroll 0 0 transparent;
+    color: #333399;
+}
+#gradient-style {
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: left;
+    width: 480px;
+}
+#gradient-style th {
+    background: url("/static/img/table-gradhead.png") repeat-x scroll 0 0 #B9C9FE;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 2px solid #D3DDFF;
+    color: #003399;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+}
+
+#gradient-style td{
+    background: none repeat scroll 0 0 #F0F0F0;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    padding: 6px;
+}
+
+#gradient-style tr.keynote td {
+    background: url("/static/img/table-gradback.png") repeat-x scroll 0 0 #FAFAFA;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    padding: 6px;
+}
+
+#gradient-style tr.heading td{
+    background: none repeat scroll 0 0 #F0F0F0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+#gradient-style tbody tr:hover td {
+    background: url("/static/img/table-gradhover.png") repeat-x scroll 0 0 #D0DAFD;
+    color: #FFF;
+
+}
+
+a.btn-sponsor {
+    background: url("/static/img/info-arrow.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 85%;
+    height: 51px;
+    margin: 90px 0 0 30px;
+    text-align:right;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(76, 154, 172, 0.75);
+    width: 139px;
+}
+
+a.btn-sponsor span {
+    display: block;
+    line-height: 1.3em;
+    padding: 7px 10px 0;
+}
+
+div.tabela {display:block;float:left}
+div.anuncios {display:block;float:left}
 
 /*
+ *
+.button a {
+    background-image: -moz-linear-gradient(center bottom , #3F5C2E 2%, #7CA84E 51%);
+ *
 Great sites that I used for creating CSS3 stuff available:
 
    * shadows
