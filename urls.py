@@ -1,8 +1,17 @@
-from django.conf.urls.defaults import patterns
+from django.conf.urls.defaults import patterns, include, url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from core.views import handle_request 
+from django.contrib import admin
+from core.views import handle_request
+
+admin.autodiscover()
 
 urlpatterns = patterns('',
-                 (r'^.*$', handle_request),)
+                url(r'^admin/', include(admin.site.urls)),
+                url(r'^order/', include('orders.urls')),
+                url(r'^inscricao$', include('products.urls')),
+                url(r'^inscricao-cancelada$', handle_request, name='cancel_url'),
+                url(r'^inscricao-confirmada$', handle_request, name='return_url'),
+                (r'^something/hard/to/guess$', include('paypal.standard.ipn.urls')),
+                (r'^.*$', handle_request),)
 
 urlpatterns += staticfiles_urlpatterns()
