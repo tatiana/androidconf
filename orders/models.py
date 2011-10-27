@@ -1,5 +1,5 @@
 from django.db import models
-from products.models import Product
+from androidconf.products.models import Product
 from paypal.standard.ipn.signals import payment_was_successful
 
 class Customer(models.Model):

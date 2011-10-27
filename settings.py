@@ -2,7 +2,7 @@
 
 import os
 
-DEBUG = True 
+DEBUG = False 
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -38,7 +38,7 @@ TIME_ZONE = 'America/Chicago'
 LANGUAGE_CODE = 'en-us'
 
 SITE_ID = 1
-SITE_DOMAIN = "www.androidconf.com.br"
+SITE_DOMAIN = "http://www.androidconf.com.br"
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -150,5 +150,5 @@ LOGGING = {
     }
 }
 
-PAYPAL_RECEIVER_EMAIL = "seller_1318865695_biz@gmail.com"
+PAYPAL_RECEIVER_EMAIL = "inscricao@androidconf.com.br"
 

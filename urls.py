@@ -7,8 +7,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
                 url(r'^admin/', include(admin.site.urls)),
-                url(r'^order/', include('orders.urls')),
-                url(r'^inscricao$', include('products.urls')),
+                url(r'^order/', include('androidconf.orders.urls')),
+                url(r'^inscricao$', include('androidconf.products.urls')),
                 url(r'^inscricao-cancelada$', handle_request, name='cancel_url'),
                 url(r'^inscricao-confirmada$', handle_request, name='return_url'),
                 (r'^something/hard/to/guess$', include('paypal.standard.ipn.urls')),

@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 from django.core.urlresolvers import reverse
 from django.conf import settings
 from paypal.standard.forms import PayPalPaymentsForm
-from products.models import Product
+from androidconf.products.models import Product
 
 class PayPalForm(PayPalPaymentsForm):
     def get_image(self):
@@ -25,6 +25,7 @@ def product_detail(request, slug="androidconf-2011"):
         'return_url': settings.SITE_DOMAIN + reverse('return_url'),
         'cancel_return': settings.SITE_DOMAIN + reverse('cancel_url'),
         'currency_code': 'BRL',
+        'lc': 'BR',
     }
     form = PayPalForm(initial=paypal)
     if settings.DEBUG:
