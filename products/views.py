@@ -35,5 +35,6 @@ def product_detail(request, slug="androidconf-2011"):
     return render_to_response('registration.html', {
         'product' : product,
         'form' : rendered_form,
+        'current_page': 'inscricao'
     }, RequestContext(request))
 
