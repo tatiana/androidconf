@@ -101,6 +101,7 @@ aside p {color:#FFF}
     float:left;
     margin-top:10px;
     margin-left:10px;
+    margin-bottom:80px;
     z-index:-10px
     }
 
@@ -110,8 +111,7 @@ position:absolute;
     margin-bottom: -34px;
     margin-left: -26px;
     margin-top: -7px;
-z-index: 10000;
-Gonow}
+z-index: 10000;}
 
 .twtr-widget-profile img.twtr-profile-img {
     display: none !important;}
@@ -126,7 +126,6 @@ footer {background:#535353;bottom:0;display:block;height:100px;width:100%;
     -moz-box-shadow: 10px 10px 71px #000000;
     -webkit-box-shadow: 10px 10px 71px #000000;
     box-shadow: 1px 1px 10px #000000;
-    position: absolute;
     bottom: 0;
     }
 footer #menu-outer {height: 80px; margin: 0 auto; width: 960px;}
@@ -138,12 +137,13 @@ footer li .person {display:block; float:left; width:220px;margin-left:0}
 footer li p {color: #90C558; font-size: 16px; font-weight: bold; margin-bottom: 6px}
 footer li.person div {float:left; width:100px}
 footer li.person div a {color:#FFF; font-size:12px;}
+footer li.person-column-2 {width:82px}
 footer li.last div {float:left; width:110px}
 footer li.sponsor {width:120px}
 footer li.first-item {width:96px}
 footer li.caelum{padding-top:4px}
-footer li.first {margin-right:60px}
-
+footer li.first {margin-right:20px}
+footer li.euandroid {padding-top:12px; margin-right:20px}
 
 .footernav {
     color: #687680;
