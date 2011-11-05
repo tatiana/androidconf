@@ -132,7 +132,7 @@ footer #menu-outer {height: 80px; margin: 0 auto; width: 960px;}
 footer .table {display:table; margin: 0 auto;}
 footer ul#horizontal-list {list-style: none; padding-top: 10px;width: 960px;}
 footer ul#horizontal-list li {display:inline;}
-footer li {display:block; float:left} 
+footer li {display:block; float:left}
 footer li .person {display:block; float:left; width:220px;margin-left:0} 
 footer li p {color: #90C558; font-size: 16px; font-weight: bold; margin-bottom: 10px}
 footer li.person div {float:left; width:100px}
@@ -142,7 +142,6 @@ footer li.last div {float:left; width:110px}
 footer li.sponsor {width:120px}
 footer li.sponsor img {margin-bottom:4px}
 footer li.first {margin-right:20px}
-footer a.cicero {margin-:-7px}
 footer li.euandroid {padding-top:20px; margin-right:20px}
 
 .footernav {
