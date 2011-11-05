@@ -134,16 +134,16 @@ footer ul#horizontal-list {list-style: none; padding-top: 10px;width: 960px;}
 footer ul#horizontal-list li {display:inline;}
 footer li {display:block; float:left} 
 footer li .person {display:block; float:left; width:220px;margin-left:0} 
-footer li p {color: #90C558; font-size: 16px; font-weight: bold; margin-bottom: 6px}
+footer li p {color: #90C558; font-size: 16px; font-weight: bold; margin-bottom: 10px}
 footer li.person div {float:left; width:100px}
-footer li.person div a {color:#FFF; font-size:12px;}
+footer li.person div a {color:#FFF; font-size:12px; line-height:18px}
 footer li.person-column-2 {width:82px}
 footer li.last div {float:left; width:110px}
 footer li.sponsor {width:120px}
-footer li.first-item {width:96px}
-footer li.caelum{padding-top:4px}
+footer li.sponsor img {margin-bottom:4px}
 footer li.first {margin-right:20px}
-footer li.euandroid {padding-top:12px; margin-right:20px}
+footer a.cicero {margin-:-7px}
+footer li.euandroid {padding-top:20px; margin-right:20px}
 
 .footernav {
     color: #687680;
