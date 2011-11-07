@@ -155,38 +155,45 @@ footer li.euandroid {padding-top:20px; margin-right:12px}
 
 
 
-#background-image tbody tr:hover td {
+#background-image tbody tr td:hover {
     background: none repeat scroll 0 0 transparent;
     color: #333399;
 }
 
 #gradient-style {
     border-collapse: collapse;
-    font-size: 11px;
-    text-align: left;
+    color: #535353;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
     width: 640px;
 }
 #gradient-style th {
-    background: url("/static/img/table-gradhead.png") repeat-x scroll 0 0 #B9C9FE;
+    background: #759D63;
     border-bottom: 1px solid #FFFFFF;
-    border-top: 2px solid #D3DDFF;
-    color: #003399;
-    font-size: 11px;
+    border-top: 2px solid;
+    color: #FFF;
+    font-size: 14px;
     font-weight: normal;
+    line-height:16px;
     padding: 3px 6px 3px 6px;
+    text-align: center;
 }
 
 #gradient-style td{
     background: none repeat scroll 0 0 #F0F0F0;
-    font-size: 11px;
     font-weight: normal;
     border-bottom: 1px solid #FFFFFF;
     border-top: 1px solid #FFFFFF;
     padding: 3px 6px 3px 6px;
+    width: 250px
+}
+#gradient-style td.time{
+    width:80px;
 }
 
 #gradient-style tr.keynote td {
-    background: url("/static/img/table-gradback.png") repeat-x scroll 0 0 #FAFAFA;
+    background: #ACD2A0;
     border-bottom: 1px solid #FFFFFF;
     border-top: 1px solid #FFFFFF;
     padding: 3px 6px 3px 6px;
@@ -194,13 +201,12 @@ footer li.euandroid {padding-top:20px; margin-right:12px}
 
 #gradient-style tr.heading td{
     background: none repeat scroll 0 0 #DDDDDD;
-    font-size: 11px;
     font-weight: normal;
 }
 
 
-#gradient-style tbody tr:hover td {
-    background: url("/static/img/table-gradhover.png") repeat-x scroll 0 0 #D0DAFD;
+#gradient-style tbody tr td:hover {
+    background: #759D63;
     color: #FFF;
 
 }
