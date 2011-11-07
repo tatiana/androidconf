@@ -137,8 +137,10 @@ footer li .person {display:block; float:left; width:220px;margin-left:0}
 footer li p {color: #90C558; font-size: 16px; font-weight: bold; margin-bottom: 10px}
 footer li.person div {float:left; width:100px}
 footer li.person div a {color:#FFF; font-size:12px; line-height:18px}
-footer li.person-column-2 {width:82px}
-footer li.last div {float:left; width:110px}
+footer li.last {float:left; width:210px}
+footer li.last ul {float:left; width:100px}
+footer li.person ul.person-column-2 {margin-left:10px}
+footer li.last ul li span a {color:#FFF; font-size:12px; line-height:20px;}
 footer li.sponsor {width:120px}
 footer li.sponsor img {margin-bottom:4px}
 footer li.first {margin-right:12px}
