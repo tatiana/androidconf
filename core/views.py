@@ -7,8 +7,8 @@ template = {"sobre": "index.html",
             "local": "place.html",
             "patrocine": "sponsor.html",
             "inscricao": "registration.html",
-            #"inscricao-confirmada": "success.html",
-            #"inscricao-cancelada": "cancel.html",
+            "inscricao-confirmada": "success.html",
+            "inscricao-cancelada": "cancel.html",
             "programacao": "agenda.html"}
 
 def handle_request(request):
