@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block aside %}
+{% include "sidebar-without-subscribe.html" %}
+{% endblock aside %}
+        {% block content %}
+            <article>
+{% include "social.html" %}
+                <h2>garanta a sua vaga</h2>
+                <p>A taxa de inscrição do segundo lote para AndroidConf 2011 é de <strong>R$ 130,00</strong> e dá direito ao participante:</p>
+                <ul>
+                    <li>Participar da AndroidConf 2011</li>
+                    <li>Receber material do participante (incluindo camiseta)</li>
+                    <li>Coffee break e almoço</li>
+                </ul>
+
+-                <p>Para efetuar o pagamento, utilize o PayPal:</p>
+-                {{ form }}
+-                <br>
+-                <p>Caso haja alguma dúvida ou problema relacionados ao pagamento, escreva para:
+-                <strong>contato</strong> <i>arroba</i> <strong>androidconf.com.br</strong>
+-                </p>
+            </article>
+
+
+        {% endblock content %}
+
+
+
+
+

@@ -11,7 +11,7 @@ class PayPalForm(PayPalPaymentsForm):
     def get_image(self):
         return "%simg/button-paypal.gif" % settings.STATIC_URL
 
-def product_detail(request, slug="androidconf-2011"):
+def product_detail(request, slug="androidconf-2011-wl"):
     product = get_object_or_404(Product, slug=slug)
     paypal = {
         'amount': product.price,
@@ -32,7 +32,7 @@ def product_detail(request, slug="androidconf-2011"):
         rendered_form = form.sandbox()
     else:
         rendered_form = form.render()
-    return render_to_response('registration.html', {
+    return render_to_response('registration_waiting_list.html', {
         'product' : product,
         'form' : rendered_form,
         'current_page': 'inscricao'
