@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.db import models
 from androidconf.products.models import Product
 from paypal.standard.ipn.signals import payment_was_successful
@@ -10,22 +11,23 @@ class Customer(models.Model):
     def __str__(self):
         return self.email
 
-    class Admin:
-        list_display   = ('first_name', 'last_name', 'email')
-        list_filter    = ('first_name', 'last_name')
-        ordering       = ('-first_name',)
-        search_fields  = ('first_name','last_name','email')
+class CustomerAdmin(admin.ModelAdmin):
+    list_display   = ('first_name', 'last_name', 'email')
+    list_filter    = ('first_name', 'last_name')
+    ordering       = ('-first_name',)
+    search_fields  = ('first_name','last_name','email')
+
 
 class Order(models.Model):
     customer = models.ForeignKey(Customer)
     product = models.ForeignKey(Product)
     time_of_purchase = models.DateTimeField(auto_now_add=True)
 
-    class Admin:
-        list_display   = ('customer', 'product', 'time_of_purchase')
-        list_filter    = ('customer', 'product')
-        ordering       = ('-time_of_purchase',)
-        search_fields  = ('customer','product')
+class OrderAdmin(admin.ModelAdmin):
+    list_display   = ('customer', 'product', 'time_of_purchase')
+    list_filter    = ('customer', 'product')
+    ordering       = ('-time_of_purchase',)
+    search_fields  = ('customer','product')
 
 def confirm_payment(sender, **kwargs):
     # it's important to check that the product exists

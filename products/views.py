@@ -38,3 +38,30 @@ def product_detail(request, slug="androidconf-2011-wl"):
         'current_page': 'inscricao'
     }, RequestContext(request))
 
+def product_detail_2nd(request, slug="androidconf-2011"):
+    product = get_object_or_404(Product, slug=slug)
+    paypal = {
+        'amount': 130,#product.price,
+        'item_name': product.title,
+        'item_number': product.slug,
+        # PayPal wants a unique invoice ID
+        'invoice': str(uuid.uuid1()),
+        # It'll be a good idea to setup a SITE_DOMAIN inside settings
+        # so you don't need to hardcode these values.
+        "notify_url": "%s%s" % (settings.SITE_DOMAIN, reverse('paypal-ipn')),
+        'return_url': settings.SITE_DOMAIN + reverse('return_url'),
+        'cancel_return': settings.SITE_DOMAIN + reverse('cancel_url'),
+        'currency_code': 'BRL',
+        'lc': 'BR',
+    }
+    form = PayPalForm(initial=paypal)
+    if settings.DEBUG:
+        rendered_form = form.sandbox()
+    else:
+        rendered_form = form.render()
+    return render_to_response('registration_2nd_call.html', {
+        'product' : product,
+        'form' : rendered_form,
+        'current_page': 'inscricao'
+    }, RequestContext(request))
+
