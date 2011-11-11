@@ -14,7 +14,7 @@ class PayPalForm(PayPalPaymentsForm):
 def product_detail(request, slug="androidconf-2011-wl"):
     product = get_object_or_404(Product, slug=slug)
     paypal = {
-        'amount': product.price,
+        'amount': 130,#product.price,
         'item_name': product.title,
         'item_number': product.slug,
         # PayPal wants a unique invoice ID
