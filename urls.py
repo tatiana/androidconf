@@ -11,7 +11,7 @@ urlpatterns = patterns('',
                 #url(r'^inscricao$', include('androidconf.products.urls')),
                 url(r'^inscricao-cancelada$', handle_request, name='cancel_url'),
                 url(r'^inscricao-confirmada$', handle_request, name='return_url'),
-                #url(r'^inscricao-', include('androidconf.products.urls')),
+                url(r'^inscricao-', include('androidconf.products.urls')),
                 (r'^something/hard/to/guess$', include('paypal.standard.ipn.urls')),
                 (r'^.*$', handle_request),)
 

@@ -11,7 +11,7 @@ class PayPalForm(PayPalPaymentsForm):
     def get_image(self):
         return "%simg/button-paypal.gif" % settings.STATIC_URL
 
-def product_detail(request, slug="androidconf-2011-wl"):
+def product_detail(request, slug="androidconf-2011-lc"):
     product = get_object_or_404(Product, slug=slug)
     paypal = {
         'amount': 130,#product.price,
