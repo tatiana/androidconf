@@ -1,25 +1,38 @@
                 <div class="sidebar">
-                    <p>.</p>
-                    <div id="countdown">
-                         <ul>
-                            <li>
-                                <div class="digits" id="countdown-days">00:</div>
-                                <div class="digits-label">dias </div>
-                            </li>
-                            <li>
-                                <div class="digits" id="countdown-hours">00:</div>
-                                <div class="digits-label">horas </div>
-                            </li>
-                            <li>
-                                <div class="digits" id="countdown-minutes">00:</div>
-                                <div class="digits-label">mins </div>
-                            </li>
-                            <li>
-                                <div class="digits" id="countdown-seconds">00</div>
-                                <div class="digits-label">segs</div>
-                            </li>
-                        </ul>
-                    </div>
+                  <p>.</p>
+                  <div class="countdown" id="conference-running">
+                    O evento está rolando!
+                  </div>
+                  <div class="countdown" id="conference-finished">
+                    O evento já rolou!
+                  </div>
+                  <div class="countdown" id="countdown">
+                       <ul>
+                          <li>
+                            <div class="digits">
+                              <span id="countdown-days">00</span>:
+                            </div>
+                              <div class="digits-label">dias </div>
+                          </li>
+                          <li>
+                            <div class="digits">
+                              <span id="countdown-hours">00</span>:
+                            </div>
+                              <div class="digits-label">horas </div>
+                          </li>
+                          <li>
+                            <div class="digits">
+                              <span id="countdown-minutes">00</span>:
+                            </div>
+                              <div class="digits-label">mins </div>
+                          </li>
+                          <li>
+                              <div class="digits" id="countdown-seconds">00</div>
+                              <div class="digits-label">segs</div>
+                          </li>
+                      </ul>
+                  </div>
+
                     <div id="twitter">
                         <img class="androidbird" src="/static/img/twitter-android.png" alt="Tweeter Android" />
                         <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -52,42 +65,11 @@
                                 behavior: 'all'
                                 }
                             }).render().setUser('androidconf').start();
-                        </script>
+                          </script>
+                          <script type="text/javascript"
+                                  src="{{ STATIC_URL }}js/countdown.js"></script>
                     </div>
                     <div class="social">
                         <a href="# id="twitter""></a>
                     </div>
-                    <script type="text/javascript">
-                        function Countdown(then, elementId) {
-                            this.then = then;
-                            this.elementId = elementId;
-
-                            function setElement(id, value) {
-                                value = (value < 10) ? "0" + value: + value;
-                                value =(id != "countdown-seconds") ? value+":" : value;
-                            document.getElementById(id).innerHTML = value;
-                            }
-                            function countdown() {
-                                now = new Date();
-                                diff = new Date(this.then - now);
-                                seconds_left  = Math.floor(diff.valueOf() / 1000);
-                                seconds  = Math.floor(seconds_left / 1) % 60;
-                                minutes  = Math.floor(seconds_left / 60) % 60;
-                                hours    = Math.floor(seconds_left / 3600) % 24;
-                                days     = Math.floor(seconds_left / 86400) % 86400;
-
-                                setElement('countdown-days', days);
-                                setElement('countdown-hours', hours);
-                                setElement('countdown-minutes', minutes);
-                                setElement('countdown-seconds', seconds);
-
-                                countdown.timer = setTimeout(countdown, 1000);
-                            }
-                            function start() {
-                                this.timer = setTimeout(countdown, 1000);
-                            }
-                            start(then);
-                        }
-                        Countdown(new Date("Nov 26 2011 08:00:00"), "countdown");
-                    </script>
                 </div>
